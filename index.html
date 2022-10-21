@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  <!-- Caracteres latinos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- Reconocimiento del dispositivo (tamaño)  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Adapte al tamaño de la pantalla -->
+    <title>Bookvlog</title>  <!-- Titulo -->
+
+    <!-- CDN Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  <!-- Link para vincular CDN -->
+
+    <!-- CDN Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Font Awesome styles -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">  <!-- Estilos própios (mi css) -->
+
+    <!-- CDN Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- Conexion con google -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">  <!-- traer la funete que queremos -->
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul id="menu">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nuestros libros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Buscar sinopsis completa">
+                        <button class="form-btn"><i class="far fa-search"></i></button>
+                    </form>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo">Selección de Agosto</h1> <!-- dentro de class, todo lo que esté separado por un espacio representa una clase difertes y lo último que se pone es lo que queda -->
+        <section> <!-- sección de los libros -->
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/historia_de_dos_ciudades.png" class="card-img-top" alt="portada del libro historia de dos ciudades">
+                <!-- alt es el texto alternativo que se carga cuando la imagen no llega a cargar -->
+                <div class="card-body">
+                    <h5 class="card-title">Historia de dos ciudades</h5>
+                    <div class="overflow-hidden texto-colapsable"> <!-- overflow-hidden es para que no se salga del contenedor -->
+                        <p class="card-text">El Londres pacífico pero grotesco del rey Jorge III y el París clamoroso y
+                            ensangrentado de la Revolución Francesa son las dos ciudades sobre cuyo fondo se escribe
+                            esta
+                            inolvidable historia de intriga apasionante. Violentas escenas de masas, estallidos de
+                            hambre y
+                            venganza, espías y conspiradores, héroes fracasados y héroes a su pesar se mezclan en una
+                            trama
+                            artística y perfecta, llena de sorpresas y magistralmente elaborada por un Dickens en uno de
+                            sus
+                            mejores momentos creativos.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a> <!-- Bootstrap -->
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/diez_negritos.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Diez Negritos</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">Owen, propietario de una lujosa mansión a la par que perfecto desconocido
+                            para
+                            todos sus invitados. Tras la primera cena, y sin haber conocido aún a su anfitrión, los diez
+                            comensales son acusados mediante una grabación de haber cometido un crimen en el pasado.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/don_quijote.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Don Quijote de la Mancha</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">El ingenioso hidalgo don Quijote de la Mancha narra las aventuras de Alonso
+                            Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y
+                            creyendo
+                            ser un caballero andante, nombrándose a sí mismo como don Quijote de la Mancha. Sus
+                            intenciones
+                            son ayudar a los pobres y desfavorecidos, y lograr el amor de la supuesta Dulcinea del
+                            Toboso,
+                            que es en realidad es una campesina llamada Aldonza Lorenzo. Decide nombrar a Sancho Panza,
+                            un
+                            empleado suyo, su escudero. Juntos viven muchas aventuras y tras ser vencido por el
+                            Caballero de
+                            la Blanca Luna se retira a su hogar, donde, tras adquirir de nuevo la cordura, fallece</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/el_principito.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">El Principito</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">Un piloto que viaja solo tiene que aterrizar en medio de un desierto para
+                            arreglar una avería de su avioneta. Allí, en medio de la nada, aparece un niño que le pide
+                            que
+                            le dibuje un cordero... y poco a poco, a base de preguntas, le va contando su propio
+                            historia:
+                            la historia de un planeta minúsculo, su casa, una preciosa flor que brotó orgullosa, la
+                            historia
+                            de sus volcanes y de los temibles baobabs. Y también la historia de su viaje, de los
+                            planetas
+                            por los que pasó y las personas que conoció.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/el_senior_de_los_anillos.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">El señor de los anillos</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">En la adormecida e idílica Comarca, un joven hobbit recibe un encargo:
+                            custodiar el Anillo Único y emprender el viaje para su destrucción en las Grietas del
+                            Destino.
+                            Consciente de la importancia de su misión, Frodo abandona la Comarca e inicia el camino
+                            hacia
+                            Mordor con la compañía de inesperada de Sam, Pippin y Merry.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/1984.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">1984</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">En 1984, Londres está controlada por un gobieno totalitario. El Gran
+                            Hermano lo vigila absolutamente todo. La mano ejecutora, la Policía del Pensamiento,
+                            controla cada aspecto de la vida de los ciudadanos.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/matar_a_un_ruisenior.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Matar a un ruiseñor</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">Jean Louise Finch evoca una época de su infancia en Alabama, cuando su
+                            padre,
+                            Atticus, decidió defender ante los tribunales a un hombre negro acusado de violar a una
+                            mujer
+                            blanca. Novela de iniciación, Matar a un ruiseñor muestra una comunidad, la del sur de
+                            Estados
+                            Unidos durante la década de 1930, dominada por los prejuicios raciales, la desconfianza
+                            hacia lo
+                            diferente y la rigidez de los vínculos familiares y vecinales, así como por un sistema
+                            judicial
+                            sin apenas garantías para la población de color.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <div class="card"> <!-- Bootstrap -->
+                <img src="assets/la_chica_del_tren.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">La chica del tren</h5>
+                    <div class="overflow-hidden texto-colapsable">
+                        <p class="card-text">Rachel toma siempre el tren de las 8.04 h. Cada mañana lo mismo: el mismo
+                            paisaje, las mismas casas… y la misma parada en la señal roja. Son solo unos segundos, pero
+                            le permiten observar a una pareja desayunando tranquilamente en su terraza. Siente que los
+                            conoce y se inventa unos nombres para ellos: Jess y Jason</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Ver sinopsis completa</a>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example"> <!-- Bootstrap -->
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <h2 class="sub-titles py-4 border-top">Contacto</h2> <!-- Bootstrap (lo de adentro de la class) y mío (estructura h2 y la palabra Contacto)-->
+        <div class="container-contacto" id="contacto"> <!-- Bootstrap solo agrego ID-->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input type="lastname" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Perez">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+
+        <h2 class="sub-titles py-4 border-top">FAQ</h2> <!-- Bootstrap -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        ¿Quiénes somos?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p>Somos dos amigas apasionadas por la lectura y la escritura. Nos encanta compartir nuestras lecturas y recomendaciones con ustedes 🤓</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Por qué hacemos esto?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Buscamos dar nuestra opinion sobre los libros que leemos y como nos hubiera gustado que lo
+                            hicieran con nosotras. Queremos que nos cuenten sus opiniones y que nos recomienden libros
+                            que les hayan gustado.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿Nos pueden contactar?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p><strong>Claro que si.</strong>
+                            En nuestra página principal encontrarán un formulario de contacto para que nos envíen sus
+                            consultas, comentarios y recomendaciones. También pueden contactarnos a través de nuestras
+                            redes sociales.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-1 footer-container"> <!-- Bootstrap -->
+        <div class="row"> <!-- Bootstrap -->
+            <div class="py-5 col-4 offset-4 ">
+                <form>
+                    <h5>Suscribite a nuesto newsletter</h5>
+                    <p>Para enterarte de las últimas novedades!</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 my-4 border-top"> <!-- d-flex = display flex
+        justify-content-between = css
+        border-top = margen predeterminado de bootstrap -->
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="https://twitter.com/clarigarbarini"><i
+                            class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="https://instagram.com/clarigarbarini"><i
+                            class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- CDN Bootstrap styles JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <!-- en nuestro caso solo sirve para abrir y cerrar los boxs de la sección de preguntas frecuentes-->
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+:root { /* declaración de variables globales */
+    --footer-color: #8653ff; /* color de fondo del footer -> estas son variables*/
+    --header-color: #e7bc7b; /* color de fondo del header */
+}
+
+* { /* declaración de estilos globales que quedan por defecto */
+    margin: 0;
+    padding: 0;
+}
+
+#menu { /* el # es porque menu es una identificador o id */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px; 
+    list-style: none;
+    align-items: center;
+    background-color: var(--header-color);
+}
+
+.sub-menu { /* el puntito es porque sub-menu es una clase o class */
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    color: var(--footer-color);
+    font: 18px "Ubuntu", sans-serif;
+}
+
+.sub-menu li a:hover {
+    color: #fff;
+}
+.sub-menu li:hover {
+    transform: scale(1.25);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container img {
+    width: 6vw;
+}
+
+input { /* no hay puntito ni # es porque es una etiqueta semántica */
+    width: 200px;
+    border: 1px solid var(--footer-color);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+input::placeholder { /* ::placeholder es un pseudo-elemento */
+    font: 14px "Ubuntu", sans-serif;
+}
+
+.form-btn {
+    border: none;
+    padding: 5px;
+    background-color: #fff;
+    margin-left: -35px;
+    border-radius: 50%;
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.sub-titles {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+main h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: start;
+    margin: 0 0 0 17px;
+    text-decoration: underline;
+}
+
+main p, .accordion-button {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem;
+    margin: 1.15em auto;
+}
+
+.card img:hover { /* el :hover es un pseudo-clase */
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 400px;
+}
+
+.container-contacto {
+    display: flex;
+    flex-flow: column;
+    width: 50vw;
+    margin: 20px auto;
+}
+
+.container-contacto button {
+    width: 15vw;
+    margin: auto;
+    align-self: center;
+}
+
+.footer-container {
+    background-color: var(--header-color);
+    padding: 0 10vw;
+}
+
+.accordion {
+    margin-bottom: 60px;
+}
+
+.texto-colapsable {
+    height: 290px;
+    margin-bottom: 15px;
+}
